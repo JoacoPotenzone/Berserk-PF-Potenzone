@@ -65,7 +65,6 @@ ul{
 }
 main{
     position: relative;
-    min-height: 100vh;
 }
 footer{
     background-color: #000000;
@@ -77,7 +76,6 @@ footer h2{
 }
 .inicio{
     width: 90%;
-    min-height: 100vh;
     background-color: rgba(35, 35, 33, 0.819);
 }
 .contenedor_padre{
@@ -126,6 +124,7 @@ header main footer{
 h2{    
     color: rgb(255, 255, 255);
     text-align: center;
+    margin: 2rem;
 }
 .episodios{
     display: flex;
@@ -134,15 +133,10 @@ h2{
     align-items: center;
     padding: 2rem;
 }
-embed{
-    width: 780px;
-    height: 630px;
-}
 .lista-episodios{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(5, 140px);
-    margin: 2rem;
 }
 .lista-episodios li{
     border: 1.5px solid rgba(255, 255, 255, 0.575);
@@ -178,8 +172,53 @@ embed{
     display: grid;
 
 }
+.img_personajes{
+    width: 200px;
+}
+iframe{
+    width: 560px;
+    height: 315px;
+}
 /*Responsive
 Celular*/
-@media screen {
-    
+@media (max-width: 420px) {
+    .berserk a{
+        font-size: 50px;
+        padding: 1.5rem;
+    }
+    nav{
+        display: none;
+    }
+    .inicio{
+        width: 98%;
+    }
+    p{
+        font-size: 13px;
+        text-align: justify;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .img_personajes{
+        width: 150px;
+        
+    }
+    .separador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-episodios{
+        display: grid;
+        grid-template-columns: repeat(4, 80px);
+        padding: 0;
+    }
+    .lista-episodios li a{
+        font-size: 12px;
+        
+    }
+    iframe{
+        width: 400px;
+        height: 300px;
+    }
 }
