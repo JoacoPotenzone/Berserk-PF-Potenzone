@@ -133,11 +133,6 @@ h2{
     align-items: center;
     padding: 2rem;
 }
-.lista-episodios{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(5, 140px);
-}
 .lista-episodios li{
     border: 1.5px solid rgba(255, 255, 255, 0.575);
     justify-content: center;
@@ -146,7 +141,6 @@ h2{
     font-family: 'Castoro Titling', cursive;
     font-family: 'Inconsolata', monospace;
     color: rgb(255, 255,255);
-    align-items: center;
     text-decoration: none;
     position: relative;
 }
@@ -168,16 +162,20 @@ h2{
     flex-direction: column;
     align-items: center;
 }
-.contenedor_tienda{
-    display: grid;
-
-}
 .img_personajes{
     width: 200px;
 }
 iframe{
     width: 560px;
     height: 315px;
+}
+.dropdown-item{
+    color: #ffffff;
+    text-align: end;
+}
+.links_footer{
+    color: #212121;
+    text-decoration: none;
 }
 /*Responsive
 Celular*/
@@ -230,19 +228,6 @@ Celular*/
         flex-direction: column;
         align-items: center;
     }
-    .lista-episodios{
-        display: grid;
-        grid-template-columns: repeat(4, 80px);
-        padding: 0;
-    }
-    .lista-episodios li a{
-        font-size: 12px;
-        
-    }
-    iframe{
-        width: 400px;
-        height: 300px;
-    }
     .dropdown-item{
         color: #ffffff;
         text-align: end;
@@ -251,6 +236,17 @@ Celular*/
 /*Responsive
 Tablets*/
 @media (max-width: 768px){
-
-
+    iframe{
+        width: 380px;
+        height: 315px;
+    }
+    .separador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dropdown-item{
+        color: #ffffff;
+        text-align: end;
+    }
 }
