@@ -2,7 +2,7 @@ footer {
   position: relative;
   z-index: 1;
   background-color: #000000;
-  padding: 2rem;
+  padding: 1rem;
 }
 footer .links_footer {
   color: #212121;
@@ -88,7 +88,7 @@ main .contenedor_padre .background_video video {
   z-index: -1;
 }
 
-@media (min-width: 419px) {
+@media (min-width: 400px) {
   .contenedor_padre {
     display: flex;
     flex-direction: column;
@@ -145,10 +145,10 @@ main .contenedor_padre .background_video video {
     height: 315px;
   }
   footer div h4 {
-    font-size: 15px;
+    font-size: 13px;
   }
   footer .links_footer h6 {
-    font-size: 10px;
+    font-size: 9px;
   }
   .lista-episodios div li a {
     font-size: 13px;
