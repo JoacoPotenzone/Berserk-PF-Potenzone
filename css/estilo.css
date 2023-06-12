@@ -19,7 +19,6 @@ main .contenedor_padre {
   align-items: center;
 }
 main .contenedor_padre .inicio {
-  width: 90%;
   background-color: rgba(35, 35, 33, 0.819);
 }
 main .contenedor_padre .inicio h3 {
@@ -74,9 +73,6 @@ main .contenedor_padre .inicio .lista-episodios .nom-personaje {
   color: rgb(255, 255, 255);
   text-align: center;
   padding-left: 0.5rem;
-}
-main .contenedor_padre .inicio .lista-episodios .img_personajes {
-  width: 200px;
 }
 main .contenedor_padre .background_video {
   width: 50%;
@@ -148,7 +144,7 @@ main .contenedor_padre .background_video video {
     width: 380px;
     height: 315px;
   }
-  footer h4 {
+  footer div h4 {
     font-size: 15px;
   }
   footer .links_footer h6 {
@@ -186,7 +182,13 @@ main .contenedor_padre .background_video video {
     align-items: center;
   }
   .contenedor_padre .inicio .separador .img_personajes {
-    width: 150px;
+    width: 200px;
+  }
+  footer div h4 {
+    font-size: 20px;
+  }
+  footer .links_footer h6 {
+    font-size: 14px;
   }
 }
 @media (min-width: 1024px) {
@@ -196,6 +198,20 @@ main .contenedor_padre .background_video video {
   }
   .berserk a {
     font-size: 100px;
+  }
+  .contenedor_padre .inicio .separador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contenedor_padre .inicio .separador .img_personajes {
+    width: 250px;
+  }
+  footer div h4 {
+    font-size: 30px;
+  }
+  footer .links_footer h6 {
+    font-size: 17px;
   }
 }
 .cabecera {
