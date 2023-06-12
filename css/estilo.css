@@ -97,7 +97,7 @@ main .contenedor_padre .background_video video {
   z-index: -1;
 }
 
-@media (min-width: 419px) {
+@media (max-width: 419px) {
   .contenedor_padre {
     display: flex;
     flex-direction: column;
@@ -167,7 +167,7 @@ main .contenedor_padre .background_video video {
     text-align: end;
   }
 }
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   iframe {
     width: 380px;
     height: 315px;

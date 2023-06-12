@@ -1,6 +1,6 @@
 
 
-@media (min-width:419px){
+@media (max-width:419px){
     .contenedor_padre{
         display: flex;
         flex-direction: column;
@@ -87,7 +87,7 @@
 }
 
         
-@media (min-width: 767px){
+@media (max-width: 767px){
     iframe{
         width: 380px;
         height: 315px;
