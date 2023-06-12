@@ -88,7 +88,7 @@ main .contenedor_padre .background_video video {
   z-index: -1;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 360px) {
   .contenedor_padre {
     display: flex;
     flex-direction: column;
@@ -141,7 +141,7 @@ main .contenedor_padre .background_video video {
     align-items: end;
   }
   iframe {
-    width: 380px;
+    width: 360px;
     height: 315px;
   }
   footer div h4 {
@@ -167,7 +167,7 @@ main .contenedor_padre .background_video video {
     font-size: 80px;
   }
   .contenedor_padre .inicio {
-    width: 98%;
+    width: 93%;
   }
   .contenedor_padre .inicio p {
     font-size: 15px;
@@ -198,6 +198,9 @@ main .contenedor_padre .background_video video {
   }
   .berserk a {
     font-size: 100px;
+  }
+  .contenedor_padre .inicio {
+    width: 90%;
   }
   .contenedor_padre .inicio .separador {
     display: flex;

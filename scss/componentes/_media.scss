@@ -1,6 +1,6 @@
 
 
-@media (min-width:400px){
+@media (min-width:360px){
     .contenedor_padre{
         display: flex;
         flex-direction: column;
@@ -60,7 +60,7 @@
         }
     }
     iframe{
-        width: 380px;
+        width: 360px;
         height: 315px;
     }
     footer{
@@ -103,7 +103,7 @@
     }
     .contenedor_padre{
         .inicio{
-            width: 98%;
+            width: 93%;
             p{
                 font-size: 15px;
                 text-align: justify;
@@ -147,6 +147,7 @@
     }
     .contenedor_padre{ 
         .inicio{
+            width: 90%;
             .separador{
                 display: flex;
                 flex-direction: row;
