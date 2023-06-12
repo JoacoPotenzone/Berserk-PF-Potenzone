@@ -70,17 +70,12 @@ main .contenedor_padre .inicio .lista-episodios li a::before {
 main .contenedor_padre .inicio .lista-episodios li a:hover::before {
   width: 50%;
 }
-main .contenedor_padre .inicio .separador {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0.5rem;
-}
-main .contenedor_padre .inicio .separador .nom-personaje {
+main .contenedor_padre .inicio .lista-episodios .nom-personaje {
   color: rgb(255, 255, 255);
   text-align: center;
   padding-left: 0.5rem;
 }
-main .contenedor_padre .inicio .separador .img_personajes {
+main .contenedor_padre .inicio .lista-episodios .img_personajes {
   width: 200px;
 }
 main .contenedor_padre .background_video {
@@ -136,7 +131,7 @@ main .contenedor_padre .background_video video {
     position: absolute;
     bottom: 0;
     width: 0;
-    height: 2px;
+    height: 0;
     background-color: #6e6f6f;
     transition: width 0.5s ease-in-out, left 0.3s ease-in-out;
     transform: translateX(0%);
@@ -172,13 +167,26 @@ main .contenedor_padre .background_video video {
     width: 380px;
     height: 315px;
   }
-  .separador {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .berserk a {
     font-size: 80px;
+  }
+  .contenedor_padre .inicio {
+    width: 98%;
+  }
+  .contenedor_padre .inicio p {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .contenedor_padre .inicio h3 {
+    font-size: 20px;
+  }
+  .contenedor_padre .inicio .separador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contenedor_padre .inicio .separador .img_personajes {
+    width: 150px;
   }
 }
 @media (min-width: 1024px) {
@@ -198,6 +206,7 @@ main .contenedor_padre .background_video video {
 .cabecera .berserk {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .cabecera .berserk a {
   font-family: "Castoro Titling", cursive;
@@ -218,7 +227,7 @@ main .contenedor_padre .background_video video {
   transform: translateX(0%);
 }
 .cabecera .berserk a:hover::before {
-  width: 100%;
+  width: 90%;
 }
 .cabecera nav ul {
   text-align: center;

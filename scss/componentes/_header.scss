@@ -5,7 +5,7 @@
     .berserk{
         display: flex;
         justify-content: center;
-        
+        align-items: center;
         a{
             font-family: 'Castoro Titling', cursive;
             font-family: 'Inconsolata', monospace;
@@ -25,7 +25,7 @@
                 transform: translateX(0%);
             }
             &:hover::before{
-                width: 100%;
+                width: 90%;
             }
         }
     }
