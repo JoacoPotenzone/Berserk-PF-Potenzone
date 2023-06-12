@@ -97,7 +97,7 @@ main .contenedor_padre .background_video video {
   z-index: -1;
 }
 
-@media (max-width: 419px) {
+@media (min-width: 419px) {
   .contenedor_padre {
     display: flex;
     flex-direction: column;
@@ -126,7 +126,7 @@ main .contenedor_padre .background_video video {
     font-family: "Inconsolata", monospace;
     color: rgb(255, 255, 255);
     align-items: center;
-    font-size: 40px;
+    font-size: 60px;
     text-decoration: none;
     position: relative;
     padding: 1.5rem;
@@ -159,15 +159,15 @@ main .contenedor_padre .background_video video {
   footer .links_footer h6 {
     font-size: 10px;
   }
-  .lista_episodios li a {
-    font-size: 12px;
+  .lista-episodios div li a {
+    font-size: 13px;
   }
   .dropdown-item {
     color: #ffffff;
     text-align: end;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   iframe {
     width: 380px;
     height: 315px;
@@ -177,11 +177,17 @@ main .contenedor_padre .background_video video {
     flex-direction: column;
     align-items: center;
   }
+  .berserk a {
+    font-size: 80px;
+  }
 }
 @media (min-width: 1024px) {
   iframe {
     width: 560px;
     height: 315px;
+  }
+  .berserk a {
+    font-size: 100px;
   }
 }
 .cabecera {
@@ -198,7 +204,6 @@ main .contenedor_padre .background_video video {
   font-family: "Inconsolata", monospace;
   color: rgb(255, 255, 255);
   align-items: center;
-  font-size: 100px;
   text-decoration: none;
   position: relative;
 }
