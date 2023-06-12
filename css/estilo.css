@@ -1,0 +1,249 @@
+footer {
+  position: relative;
+  z-index: 1;
+  background-color: #000000;
+  padding: 2rem;
+}
+footer .links_footer {
+  color: #212121;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+main .contenedor_padre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contenedor_padre .inicio {
+  width: 90%;
+  background-color: rgba(35, 35, 33, 0.819);
+}
+main .contenedor_padre .inicio h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+main .contenedor_padre .inicio p {
+  color: rgb(205, 205, 205);
+  font-family: "Castoro Titling", cursive;
+  font-family: "Inconsolata", monospace;
+  padding: 1rem;
+}
+main .contenedor_padre .inicio .episodios {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+main .contenedor_padre .inicio h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 2rem;
+}
+main .contenedor_padre .inicio .lista-episodios li {
+  border: 1.5px solid rgba(255, 255, 255, 0.575);
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+}
+main .contenedor_padre .inicio .lista-episodios li a {
+  font-family: "Castoro Titling", cursive;
+  font-family: "Inconsolata", monospace;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  position: relative;
+}
+main .contenedor_padre .inicio .lista-episodios li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.5s ease-in-out, left 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+main .contenedor_padre .inicio .lista-episodios li a:hover::before {
+  width: 50%;
+}
+main .contenedor_padre .inicio .separador {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+main .contenedor_padre .inicio .separador .nom-personaje {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-left: 0.5rem;
+}
+main .contenedor_padre .inicio .separador .img_personajes {
+  width: 200px;
+}
+main .contenedor_padre .background_video {
+  width: 50%;
+}
+main .contenedor_padre .background_video video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  object-fit: cover;
+  z-index: -1;
+}
+
+@media (min-width: 419px) {
+  .contenedor_padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor_padre .inicio {
+    width: 98%;
+  }
+  .contenedor_padre .inicio p {
+    font-size: 13px;
+    text-align: justify;
+  }
+  .contenedor_padre .inicio h3 {
+    font-size: 18px;
+  }
+  .contenedor_padre .inicio .separador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor_padre .inicio .separador .img_personajes {
+    width: 150px;
+  }
+  .berserk a {
+    font-family: "Castoro Titling", cursive;
+    font-family: "Inconsolata", monospace;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    font-size: 40px;
+    text-decoration: none;
+    position: relative;
+    padding: 1.5rem;
+  }
+  .berserk a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6e6f6f;
+    transition: width 0.5s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(0%);
+  }
+  .berserk a:hover::before {
+    width: 100%;
+  }
+  .berserk nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  iframe {
+    width: 380px;
+    height: 315px;
+  }
+  footer h4 {
+    font-size: 15px;
+  }
+  footer .links_footer h6 {
+    font-size: 10px;
+  }
+  .lista_episodios li a {
+    font-size: 12px;
+  }
+  .dropdown-item {
+    color: #ffffff;
+    text-align: end;
+  }
+}
+@media (min-width: 767px) {
+  iframe {
+    width: 380px;
+    height: 315px;
+  }
+  .separador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+.cabecera {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 2;
+}
+.cabecera .berserk {
+  display: flex;
+  justify-content: center;
+}
+.cabecera .berserk a {
+  font-family: "Castoro Titling", cursive;
+  font-family: "Inconsolata", monospace;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  font-size: 100px;
+  text-decoration: none;
+  position: relative;
+}
+.cabecera .berserk a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6e6f6f;
+  transition: width 0.5s ease-in-out, left 0.3s ease-in-out;
+  transform: translateX(0%);
+}
+.cabecera .berserk a:hover::before {
+  width: 100%;
+}
+.cabecera nav ul {
+  text-align: center;
+  padding: 1rem;
+}
+.cabecera nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 1rem;
+}
+.cabecera nav ul li .links_nav {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+  display: inline-block;
+  font-family: "Castoro Titling", cursive;
+  font-family: "Inconsolata", monospace;
+}
+.cabecera nav ul li .links_nav::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6e6f6f;
+  transition: width 0.5s ease-in-out, left 0.3s ease-in-out;
+  transform: translateX(0%);
+}
+.cabecera nav ul li .links_nav:hover::before {
+  width: 100%;
+}
+
+/*# sourceMappingURL=estilo.css.map */

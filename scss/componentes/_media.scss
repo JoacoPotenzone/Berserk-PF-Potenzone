@@ -1,0 +1,107 @@
+
+
+@media (min-width:419px){
+    .contenedor_padre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .inicio{
+            width: 98%;
+            p{
+                font-size: 13px;
+                text-align: justify;
+            }
+            h3{
+                font-size: 18px;
+            }
+            .separador{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                .img_personajes{
+                    width: 150px;      
+                }
+            }
+        }
+    }
+    .berserk{
+        a{
+            font-family: 'Castoro Titling', cursive;
+            font-family: 'Inconsolata', monospace;
+            color: rgb(255, 255,255);
+            align-items: center;
+            font-size: 40px;
+            text-decoration: none;
+            position: relative;
+            padding: 1.5rem;
+                    
+            &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: #6e6f6f;
+                    transition: width 0.5s ease-in-out, left 0.3s ease-in-out;
+                    transform: translateX(0%);
+                    }
+            &:hover::before{
+                    width: 100%;
+                    }
+        }
+                
+      nav{
+            li{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+           }
+        }
+    }
+    iframe{
+        width: 380px;
+        height: 315px;
+    }
+    footer{
+        h4{
+            font-size: 15px;
+        }
+        .links_footer{
+            h6{
+                font-size: 10px;
+            }
+        }
+    }
+    .lista_episodios{
+        li{
+            a{
+                font-size: 12px;
+            }
+        }
+    }
+    .dropdown-item{
+        color: #ffffff;
+        text-align: end;
+    }
+}
+
+        
+@media (min-width: 767px){
+    iframe{
+        width: 380px;
+        height: 315px;
+    }
+    .separador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media (min-width: 1024px){
+    iframe{
+        width: 560px;
+        height: 315px;
+    }
+}
