@@ -21,8 +21,49 @@ main .contenedor_padre {
 main .contenedor_padre .inicio {
   background-color: rgba(35, 35, 33, 0.819);
 }
+main .contenedor_padre .inicio form {
+  background-color: rgba(255, 255, 255, 0.631372549);
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  text-align: center;
+}
+main .contenedor_padre .inicio form .title_form {
+  color: rgba(35, 35, 33, 0.819);
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+main .contenedor_padre .inicio form .container_form {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+main .contenedor_padre .inicio form .container_input {
+  position: relative;
+}
+main .contenedor_padre .inicio form .form_input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+}
+main .contenedor_padre .inicio form .form_input:focus + .form_label, main .contenedor_padre .inicio form .form_input:not(:placeholder-shown) + .form_label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+}
+main .contenedor_padre .inicio form .form_label {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
 main .contenedor_padre .inicio h3 {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-align: center;
 }
 main .contenedor_padre .inicio p {

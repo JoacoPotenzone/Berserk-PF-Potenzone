@@ -8,9 +8,55 @@ main{
         
         .inicio{
             background-color: rgba(35, 35, 33, 0.819);
+
+            form{
+                background-color: #ffffffa1;
+                margin: auto;
+                width: 90%;
+                max-width: 600px;
+                padding: 4.5em 3em;
+                border-radius: 10px;
+                text-align: center;
+
+                .title_form{
+                    color: rgba(35, 35, 33, 0.819);
+                    font-size: 2rem;
+                    margin-bottom: .5em;
+                }
+                .container_form{
+                    margin-top: 3em;
+                    display: grid;
+                    gap: 2.5em;
+                }
+                .container_input{
+                    position: relative;
+
+                }
+                .form_input{
+                    width: 100%;
+                    font-size: 1rem;
+                    padding: .6em .3em;
+                    border: none;
+                    outline: none;
+                    
+                    &:focus + .form_label, &:not(:placeholder-shown) + .form_label{
+                        transform: translateY(-12px) scale(.7);
+                        transform-origin: left top;
+                    }
+                }
+                .form_label{
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    left: 5px;
+                    transform: translateY(10px);
+                    transition: transform .5s, color .3s;
+                }
+                
+            }
             
             h3{
-                color: rgb(255, 255, 255);
+                color: #ffffff;
                 text-align: center;
             }
             p{
@@ -64,6 +110,7 @@ main{
                     text-align: center;
                     padding-left: 0.5rem;
                 }
+               
             }
         }
         .background_video{
