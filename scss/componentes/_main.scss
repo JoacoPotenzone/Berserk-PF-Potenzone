@@ -5,11 +5,11 @@ main{
         display: flex;
         flex-direction: column;
         .inicio{
-            background-color: rgba(35, 35, 33, 0.819);
+            background-color: $colorbg;
             
             .item_container{
                 .item_tienda{
-                    background-color: #ffffff;
+                    background-color: $colortxtpr;
                     border-radius: 10px;
                     width: 300px;
                     figure{
@@ -25,9 +25,10 @@ main{
                             font-family: 'Inconsolata', monospace;
                             font-family: 'Castoro Titling', cursive;
                             font-weight: 900;
+                            font-size: 20px;
                         }
                         p{
-                            color: #000000;
+                            color: $colortxtsg;
                             font-family: 'Inconsolata', monospace;
                             font-family: 'Castoro Titling', cursive;
                             font-size: 14px;
@@ -37,15 +38,15 @@ main{
                             font-family: 'Inconsolata', monospace;
                             font-family: 'Castoro Titling', cursive;
                             border: none;
-                            background-color: #000000;
-                            color: #ffffff;
+                            background-color: $colortxtsg;
+                            color: $colortxtpr;
                             padding: 15px 10px;
                             cursor: pointer;
                         }
                     }
     
                     &:hover{
-                        box-shadow: 0 10px 20px rgba(205, 205, 205, 0.474);
+                        box-shadow: 0 10px 20px $coloranima;
                         
                         figure{
                             overflow: hidden;
@@ -66,7 +67,7 @@ main{
                 }
             }
             form{
-                background-color: #ffffffa1;
+                background-color: $colorform;
                 margin: auto;
                 width: 90%;
                 max-width: 600px;
@@ -75,7 +76,7 @@ main{
                 text-align: center;
 
                 .title_form{
-                    color: rgba(35, 35, 33, 0.819);
+                    color: $colorbg;
                     font-size: 2rem;
                     margin-bottom: .5em;
                 }
@@ -94,6 +95,8 @@ main{
                     padding: .6em .3em;
                     border: none;
                     outline: none;
+                    background: none; 
+                    border-bottom: 2px solid $colorbg;
                     
                     &:focus + .form_label, &:not(:placeholder-shown) + .form_label{
                         transform: translateY(-12px) scale(.7);
@@ -108,18 +111,39 @@ main{
                     transform: translateY(10px);
                     transition: transform .5s, color .3s;
                 }
+                .submit_form{
+                    background-color: $colorbg;
+                    color: $colortxtpr;
+                    border: none;
+                    padding: 1em;
+                }
                 
             }
-            
-            h3{
-                color: #ffffff;
-                text-align: center;
+            .separador{ 
+                background-color: $colorbgseg;
+                p{
+                    color: $colorprf;
+                    font-family: 'Castoro Titling', cursive;
+                    font-family: 'Inconsolata', monospace;
+                    padding: 1rem;
+                    text-align: justify;
+                    width: 100%;
+                }
             }
             p{
-                color: rgb(205, 205, 205);
+                color: $colorprf;
                 font-family: 'Castoro Titling', cursive;
                 font-family: 'Inconsolata', monospace;
                 padding: 1rem;
+                text-align: justify;
+                width: 100%;
+
+            }
+            h3{
+                color: $colortxtpr;
+                text-align: center;
+                font-size: 25px;
+                font-weight: 700;
             }
             .episodios{
                 display: flex;
@@ -129,20 +153,21 @@ main{
                 padding: 2rem;
             }
             h2{    
-                color: rgb(255, 255, 255);
+                color: $colortxtpr;
                 text-align: center;
                 margin: 2rem;
+                font-weight: 700;
             }
             .lista-episodios{
                 li{
-                border: 1.5px solid rgba(255, 255, 255, 0.575);
+                border: 1.5px solid $coloranima;
                 justify-content: center;
                 list-style: none;
                 padding: 1rem;
                 a{
                     font-family: 'Castoro Titling', cursive;
                     font-family: 'Inconsolata', monospace;
-                    color: rgb(255, 255,255);
+                    color: $colortxtpr;
                     text-decoration: none;
                     position: relative;
 
@@ -152,7 +177,7 @@ main{
                         bottom: 0;
                         width: 0;
                         height: 2px;
-                        background-color: #ffffff;
+                        background-color: $colortxtpr;
                         transition: width 0.5s ease-in-out, left 0.3s ease-in-out;
                         transform: translateX(100%);
                     }
@@ -162,7 +187,7 @@ main{
                 }
                 }
                 .nom-personaje{
-                    color: rgb(255, 255, 255);
+                    color: $colortxtpr;
                     text-align: center;
                     padding-left: 0.5rem;
                 }
@@ -178,7 +203,7 @@ main{
                 left: 0;
                 width: 100vw;
                 height: 100%;
-                background-color: #000000;
+                background-color: $colortxtsg;
                 object-fit: cover;
                 z-index: -1;
             }

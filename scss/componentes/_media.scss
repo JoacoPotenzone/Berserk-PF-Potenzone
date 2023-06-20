@@ -17,7 +17,7 @@
                 align-items: center;
             }
             p{
-                font-size: 13px;
+                font-size: 14px;
                 text-align: justify;
             }
             h3{
@@ -38,7 +38,7 @@
         a{
             font-family: 'Castoro Titling', cursive;
             font-family: 'Inconsolata', monospace;
-            color: rgb(255, 255,255);
+            color: $colortxtpr;
             align-items: center;
             font-size: 60px;
             text-decoration: none;
@@ -51,7 +51,7 @@
                     bottom: 0;
                     width: 0;
                     height: 0;
-                    background-color: #6e6f6f;
+                    background-color: $colortxtftr;
                     transition: width 0.5s ease-in-out, left 0.3s ease-in-out;
                     transform: translateX(0%);
                     }
@@ -69,7 +69,7 @@
         }
     }
     iframe{
-        width: 360px;
+        width: 350px;
         height: 315px;
     }
     footer{
@@ -94,7 +94,7 @@
         }
     }
     .dropdown-item{
-        color: #ffffff;
+        color: $colortxtpr;
         text-align: end;
     }
 }
@@ -113,7 +113,7 @@
     }
     .contenedor_padre{
         .inicio{
-            width: 93%;
+            width: 95%;
             p{
                 font-size: 15px;
                 text-align: justify;
@@ -164,6 +164,10 @@
     .contenedor_padre{ 
         .inicio{
             width: 90%;
+            p{
+                font-size: 18px;
+                text-align: justify;
+            }
             .separador{
                 display: flex;
                 flex-direction: row;
@@ -171,6 +175,9 @@
                 
                 .img_personajes{
                     width: 250px;      
+                }
+                p{
+                    font-size: 15px;
                 }
             }
             .item_container{
