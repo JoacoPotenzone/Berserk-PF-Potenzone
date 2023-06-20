@@ -7,6 +7,15 @@
         align-items: center;
         .inicio{
             width: 98%;
+
+            .item_container{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             p{
                 font-size: 13px;
                 text-align: justify;
@@ -92,6 +101,7 @@
 
         
 @media (min-width: 767px){
+
     iframe{
         width: 380px;
         height: 315px;
@@ -120,6 +130,11 @@
                     width: 200px;      
                 }
             }
+            .item_container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
         }
     }
     footer{
@@ -136,6 +151,7 @@
     }
 }
 @media (min-width: 1024px){
+
     iframe{
         width: 560px;
         height: 315px;
@@ -156,6 +172,11 @@
                 .img_personajes{
                     width: 250px;      
                 }
+            }
+            .item_container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
             }
         }
     }

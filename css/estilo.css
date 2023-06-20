@@ -16,10 +16,59 @@ main {
 main .contenedor_padre {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 main .contenedor_padre .inicio {
   background-color: rgba(35, 35, 33, 0.819);
+}
+main .contenedor_padre .inicio .item_container .item_tienda {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 300px;
+}
+main .contenedor_padre .inicio .item_container .item_tienda figure img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+main .contenedor_padre .inicio .item_container .item_tienda div h4 {
+  font-family: "Inconsolata", monospace;
+  font-family: "Castoro Titling", cursive;
+  font-weight: 900;
+}
+main .contenedor_padre .inicio .item_container .item_tienda div p {
+  color: #000000;
+  font-family: "Inconsolata", monospace;
+  font-family: "Castoro Titling", cursive;
+  font-size: 14px;
+  font-weight: 900;
+}
+main .contenedor_padre .inicio .item_container .item_tienda div button {
+  font-family: "Inconsolata", monospace;
+  font-family: "Castoro Titling", cursive;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+main .contenedor_padre .inicio .item_container .item_tienda:hover {
+  box-shadow: 0 10px 20px rgba(205, 205, 205, 0.474);
+}
+main .contenedor_padre .inicio .item_container .item_tienda:hover figure {
+  overflow: hidden;
+}
+main .contenedor_padre .inicio .item_container .item_tienda:hover figure img {
+  border-radius: 10px 10px 0 0;
+  transform: scale(1.095);
+  transition: all 0.5s;
+}
+main .contenedor_padre .inicio .item_container .item_tienda .info_producto {
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 main .contenedor_padre .inicio form {
   background-color: rgba(255, 255, 255, 0.631372549);
@@ -124,7 +173,7 @@ main .contenedor_padre .background_video video {
   left: 0;
   width: 100vw;
   height: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   object-fit: cover;
   z-index: -1;
 }
@@ -137,6 +186,14 @@ main .contenedor_padre .background_video video {
   }
   .contenedor_padre .inicio {
     width: 98%;
+  }
+  .contenedor_padre .inicio .item_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .contenedor_padre .inicio p {
     font-size: 13px;
@@ -225,6 +282,11 @@ main .contenedor_padre .background_video video {
   .contenedor_padre .inicio .separador .img_personajes {
     width: 200px;
   }
+  .contenedor_padre .inicio .item_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
   footer div h4 {
     font-size: 20px;
   }
@@ -250,6 +312,11 @@ main .contenedor_padre .background_video video {
   }
   .contenedor_padre .inicio .separador .img_personajes {
     width: 250px;
+  }
+  .contenedor_padre .inicio .item_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
   footer div h4 {
     font-size: 30px;

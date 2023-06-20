@@ -4,11 +4,67 @@ main{
     .contenedor_padre{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        
         .inicio{
             background-color: rgba(35, 35, 33, 0.819);
-
+            
+            .item_container{
+                .item_tienda{
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    width: 300px;
+                    figure{
+                        img{
+                        width: 100%;
+                        height: 350px;
+                        object-fit: cover;
+                        border-radius: 10px 10px 0 0;
+                        }
+                    }
+                    div{
+                        h4{
+                            font-family: 'Inconsolata', monospace;
+                            font-family: 'Castoro Titling', cursive;
+                            font-weight: 900;
+                        }
+                        p{
+                            color: #000000;
+                            font-family: 'Inconsolata', monospace;
+                            font-family: 'Castoro Titling', cursive;
+                            font-size: 14px;
+                            font-weight: 900;
+                        }
+                        button{
+                            font-family: 'Inconsolata', monospace;
+                            font-family: 'Castoro Titling', cursive;
+                            border: none;
+                            background-color: #000000;
+                            color: #ffffff;
+                            padding: 15px 10px;
+                            cursor: pointer;
+                        }
+                    }
+    
+                    &:hover{
+                        box-shadow: 0 10px 20px rgba(205, 205, 205, 0.474);
+                        
+                        figure{
+                            overflow: hidden;
+                            img{
+                                border-radius: 10px 10px 0 0;
+                                transform: scale(1.095);
+                                transition: all .5s;
+                            }
+                        }
+                    }
+                    .info_producto{
+                        padding: 15px 30px;
+                        line-height: 2;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px
+                    }
+                }
+            }
             form{
                 background-color: #ffffffa1;
                 margin: auto;
@@ -122,7 +178,7 @@ main{
                 left: 0;
                 width: 100vw;
                 height: 100%;
-                background-color: rgb(0, 0, 0);
+                background-color: #000000;
                 object-fit: cover;
                 z-index: -1;
             }
